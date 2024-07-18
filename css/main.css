@@ -1,0 +1,142 @@
+:root {
+  /* colors */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --verydark-cyan: hsl(179, 100%, 13%);
+  /* Nuetral */
+  /* paragraph */
+  --transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Very-lightgray: hsl(0, 0%, 95%);
+  /* font-size */
+  --fontsize: 15px;
+  --font-family: "Lexend Deca", "san-serif";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+/* 
+==============
+ATTRIBUTION STYLING
+===================
+ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+++++++++++++++
+MAIN STYLING
+++++++++++++++
+*/
+
+.main-content {
+  padding: 2rem;
+  color: white;
+}
+.card-container {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card {
+  padding: 1.5rem;
+}
+.card-icon {
+  width: 3.5rem;
+  margin: 20px 0;
+}
+.card-title {
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  margin-bottom: 1.5rem;
+}
+.card-text {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: block;
+  background: white;
+  padding: 0.7rem;
+  max-width: 100px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card-1 {
+  background: var(--brightOrange);
+}
+.card-1 .btn {
+  color: var(--brightOrange);
+}
+.card-1 .btn:hover {
+  background: var(--brightOrange);
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem;
+}
+.card-2 {
+  background: var(--darkCyan);
+}
+.card-2 .btn {
+  color: var(--darkCyan);
+}
+.card-2 .btn:hover {
+  background: var(--darkCyan);
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem;
+}
+.card-3 {
+  background: var(--verydark-cyan);
+}
+.card-3 .btn {
+  color: var(--verydark-cyan);
+}
+.card-3 .btn:hover {
+  background: var(--verydark-cyan);
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .card-container {
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem auto;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .btn {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    max-width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem auto;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
